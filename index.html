@@ -8,13 +8,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
+    <!-- build:css css/main.css-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    
 
     <title>NuCamp: A Better Way To Camp</title>
 </head>
@@ -32,7 +33,7 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4">
-                    <a role="button" class="btn btn-lg btn-info" data-toggle="modal" data-target="#reserveModal">Reserve
+                    <a role="button" class="btn btn-lg btn-info" id="reserveButton">Reserve
                         Campsite</a>
                 </div>
             </div>
@@ -114,7 +115,7 @@
                                 class="fa fa-address-card fa-lg"> </span> Contact </a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <a role="button" id="loginButton">
                         <i class="fa fa-sign-in"> Login </i>
                     </a>
                 </span>
@@ -260,19 +261,19 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
                         <li><a href="#">Sites</a></li>
                         <li><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
-                <div col="col-6 col-sm-5">
+                <div class="col-6 col-sm-5 text-center">
                     <h5>Social</h5>
                     <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
                             class="fa fa-instagram"></i></a>
@@ -283,7 +284,7 @@
                     <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i
                             class="fa fa-youtube"></i></a>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4 text-center">
                     <a role="button" class="btn btn-link" href="tel:+5073996068"> <i class="fa fa-phone"></i>
                         507-399-6068 </a> <br>
                     <a role="button" class="btn btn-link" href="mailto:padam.pande@metrotransit.org"> <i
@@ -292,13 +293,13 @@
             </div>
         </div>
     </footer>
-
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <!--build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-
+    <!-- endbuild-->
 
 </body>
 

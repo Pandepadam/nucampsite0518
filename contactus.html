@@ -6,14 +6,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
+    <!-- buld:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
-    <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
+    <!--endbuild-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+
 
     <title>NuCamp: A Better Way To Camp</title>
 </head>
@@ -36,7 +36,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30" width="30"/> </a>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30" width="30" /> </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -121,20 +121,20 @@
                             <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
                         </div>
                     </div>
-                    
+
                     <div class="form-group row">
                         <div class="col offset-md-2">
                             May we contact you?
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" id="contactYes" name="contactRadios"
-                                        value="yes" />
-                                    <label for="contactYes" class="form-check-label">Yes</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" id="contactNo" name="contactRadios"
-                                        value="no" />
-                                    <label for="contactNo" class="form-check-label">No</label>
-                                </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactYes" name="contactRadios"
+                                    value="yes" />
+                                <label for="contactYes" class="form-check-label">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactNo" name="contactRadios"
+                                    value="no" />
+                                <label for="contactNo" class="form-check-label">No</label>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group row">
@@ -150,8 +150,9 @@
                     </div>
                 </form>
             </div>
-
-            <footer>
+        </div>
+    </div>
+            <footer class="site-footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-4 col-sm-2 offset-1">
@@ -163,6 +164,7 @@
                                 <li><a href="#">Contact</a></li>
                             </ul>
                         </div>
+
                         <div class="col-6 col-sm-5 text-center">
                             <h5>Social</h5>
                             <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
@@ -177,17 +179,19 @@
                         <div class="col-sm-4 text-center">
                             <a role="button" class="btn btn-link" href="tel:+5073996068"> <i class="fa fa-phone"></i>
                                 507-399-6068 </a> <br>
-                            <a role="button" class="btn btn-link" href="mailto:padam.pande@metrotransit.org"> <i class="fa fa-envelope-o"></i> padam.pande@metrotransit.org </a>
+                            <a role="button" class="btn btn-link" href="mailto:padam.pande@metrotransit.org"> <i
+                                    class="fa fa-envelope-o"></i> padam.pande@metrotransit.org </a>
                         </div>
                     </div>
                 </div>
             </footer>
 
             <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+            <!--build:js js/main.js -->
             <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
             <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
             <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+            <!-- endbuild -->
 </body>
 
 </html>
